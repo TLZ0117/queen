@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="dist/css/list.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+</head>
+<body>
+<!-- header -->
+<header>
+    <div class="header">
+        <a href="javascript:;" class="a">购物车</a>
+        <a href="javascript:;" class="a">我的订单</a>
+        <a href="javascript:;" class="a">会员中心</a>
+        <a href="javascript:;" class="a">APP下载</a>
+    </div>
+</header>
+
+<!-- section -->
+<div class="section">
+    <!-- nav -->
+    <div class="nav">
+        <div class="nav-box">
+            <div class="nav_z">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="nav_zh">
+                <a href="javascript:;" class="nav-a">首页</a>
+                <a href="javascript:;" class="nav-a">免费饰品</a>
+                <a href="javascript:;" class="nav-a">活动Party</a>
+                <a href="javascript:;" class="nav-a">私人会所</a>
+                <a href="javascript:;" class="nav-a">菲尔南多</a>
+            </div>
+            <div class="nav_y">
+                <img src="img/tel.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--section-two-->
+    <div class="section-two">
+        <div class="two-box1">
+            <ul class="two4-text-list">
+                <!--动态获取区-->
+                <%goodslist.forEach((item)=>{
+                %>
+                <li>
+                    <a href="goodsdetail0?goodsid=<%=item.goodsid%>" class="list-img"><img src="<%=item.goodspic%>" alt=""></a>
+                    <a href="javascript:;" style="display: block" class="list-span"><%=item.goodsname%></a>
+                    <div class="two-span">
+                        <div class="spans"><span>￥<%= item.goodsprice%></span><span style="text-decoration:line-through;">￥<%= item.goodsprice%></span></div>
+                        <div class="pp">￥<%= item.goodsprice%><a href="javascript:;" alt="加入购物车"><i></i></a></div>
+                    </div>
+                </li>
+                <%
+                })%>
+
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+
+<!--end-->
+<!--end-one-->
+<div class="end-one">
+    <ul class="end-one-ul">
+        <li class="end-one-li">
+            <b>正品保障</b>
+            <span>100%正品 提供发票</span>
+        </li>
+        <li class="end-one-li">
+            <b>消费致富</b>
+            <span>购物省钱 分享赚钱</span>
+        </li>
+        <li class="end-one-li">
+            <b>安全配送</b>
+            <span>安全快递 全程放心</span>
+        </li>
+        <li class="end-one-li">
+            <b>无忧售后</b>
+            <span>购物无忧 售后无忧</span>
+        </li>
+    </ul>
+</div>
+
+<!--end-two-->
+<div class="end-two">
+    <div class="content">
+        <div class="content-up">
+            <div class="up-zuo">
+                <ul class="zuo">
+                    <li><a href="javascript:;">首页</a></li>
+                    <li><a href="javascript:;">指南</a></li>
+                    <li><a href="javascript:;">物流</a></li>
+                    <li><a href="javascript:;">关于</a></li>
+                </ul>
+                <ul class="zuo">
+                    <li><a href="javascript:;">会员专区</a></li>
+                    <li><a href="javascript:;">免费佩戴</a></li>
+                    <li><a href="javascript:;">活动party</a></li>
+                    <li><a href="javascript:;">私人会所</a></li>
+                    <li><a href="javascript:;"> 我的积分</a></li>
+                </ul>
+                <ul class="zuo">
+                    <li><a href="javascript:;">戒指</a></li>
+                    <li><a href="javascript:;">手链</a></li>
+                    <li><a href="javascript:;">手镯</a></li>
+                </ul>
+                <ul class="zuo">
+                    <li><a href="javascript:;">手表</a></li>
+                    <li><a href="javascript:;">耳环</a></li>
+                    <li><a href="javascript:;">丝巾</a></li>
+                    <li><a href="javascript:;">太阳镜</a></li>
+                    <li><a href="javascript:;">套装</a></li>
+                </ul>
+                <ul class="zuo">
+                    <li><a href="javascript:;">售后服务</a></li>
+                    <li><a href="javascript:;">品质保证</a></li>
+                    <li><a href="javascript:;">退换货流程</a></li>
+                    <li><a href="javascript:;">退换货政策</a></li>
+                </ul>
+            </div>
+            <div class="up-you">
+                <div class="yous"><img src="img/logo.png" alt=""></div>
+                <div class="youx">
+                    <div class="x1"><img src="img/footer4.png" alt=""><span>微信公众号</span></div>
+                    <div class="x1"><img src="img/footer5.png" alt=""><span>扫码下载APP享优惠</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="content-down">
+            <span>广东省深圳市福田区车公庙苍松大厦北座1907-1908 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HOT：400-099-828 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;电话：0755-82503456/82504189/82504004 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 邮箱：frndo@126.com</span>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="ending">
+        <span class="footer1"> 深圳市菲尔南多时尚服饰有限公司 粤ICP备17057239号 </span>
+        <span class="footer2">技术支持：<a href="javascript:;">大腕互联</a></span>
+    </div>
+</footer>
+
+<!--backtop-->
+<div class="backtop"></div>
+<!--share-->
+<div class="share"></div>
+
+
+<script src="dist/js/list.js"></script>
+</body>
+</html>
