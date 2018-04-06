@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="dist/css/goods.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/iconfont.css">
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+</head>
+<body>
+<!-- header -->
+<header>
+    <div class="header">
+        <a href="javascript:;" class="a">购物车</a>
+        <a href="javascript:;" class="a">我的订单</a>
+        <a href="javascript:;" class="a">会员中心</a>
+        <a href="javascript:;" class="a">APP下载</a>
+    </div>
+</header>
+
+<!-- section -->
+<div class="section">
+    <!-- nav -->
+    <div class="nav">
+        <div class="nav-box">
+            <div class="nav_z">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="nav_zh">
+                <a href="javascript:;" class="nav-a">首页</a>
+                <a href="javascript:;" class="nav-a">免费饰品</a>
+                <a href="javascript:;" class="nav-a">活动Party</a>
+                <a href="javascript:;" class="nav-a">私人会所</a>
+                <a href="javascript:;" class="nav-a">菲尔南多</a>
+            </div>
+            <div class="nav_y">
+                <img src="img/tel.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- section-text -->
+    <div class="section-text">
+        <!-- text-one -->
+        <div class="text-one">
+            <div class="text-left">
+                <div class="bigbox">
+                    <a href="javascript:;" class="special"><img src="<%= goodsdetail.goodspic%>" alt=""></a>
+                    <a href="javascript:;" class="special"><img src="<%= goodsdetail.goodspic%>" alt=""></a>
+                    <a href="javascript:;" class="special"><img src="<%= goodsdetail.goodspic%>" alt=""></a>
+                    <a href="javascript:;" class="special"><img src="<%= goodsdetail.goodspic%>" alt=""></a>
+                </div>
+                <div class="flash-btn">
+                    <b class="pre"><</b>
+                    <div class="small-box"><img src="imglists/bigbox1.jpg" alt=""></div>
+                    <div class="small-box"><img src="imglists/bigbox2.jpg" alt=""></div>
+                    <div class="small-box"><img src="imglists/bigbox3.jpg" alt=""></div>
+                    <div class="small-box"><img src="imglists/bigbox4.jpg" alt=""></div>
+                    <b class="next">></b>
+                </div>
+            </div>
+            <div class="text-right">
+                <a href="javascript:;" class="dw"><%= goodsdetail.goodsname%></a>
+                <div class="eem">
+                    <em>现价¥<%= goodsdetail.goodsprice%>.00</em>
+                    <em class="love">原价¥<%= goodsdetail.goodsprice%>.00</em>
+                </div>
+                <span id="num">销量&nbsp;&nbsp;&nbsp;2</span>
+                <div class="bj">
+                    <span class="bj1">颜色</span>
+                    <a href="javascript:;" class="bj2 active special"><span>白色</span><i class="iconfont icon-duihao"></i></a>
+                    <a href="javascript:;" class="bj2"><span>金色</span><i class="iconfont icon-duihao"></i></a>
+                </div>
+                <ul class="ull">
+                    <li class="shang">
+                        <i class="left">数量</i>
+                        <a href="javasctipr:;" class="jian">-</a>
+                        <form action="" class="form">
+                            <input type="text" value="1" class="input">
+                        </form>
+                        <a href="javasctipr:;" class="jia">+</a>
+                        <span class="kc">库存<b><%= goodsdetail.goodscount%></b>件</span>
+                    </li>
+                    <li class="xia">
+                        <a href="javascript:;">立即购买</a>
+                        <a href="javascript:;">加入购物车</a>
+                    </li>
+                </ul>
+                <div class="end">
+                    <span class="unsupport">不支持退款</span>
+                    <span class="unsupport">不支持换货</span>
+                </div>
+            </div>
+        </div>
+        <!-- text-two -->
+        <div class="text-two">
+            <div class="control">
+                <a href="javscript:;" class="active" id="infor">商品详情</a>
+                <a href="javscript:;" id="commo">商品评价</a>
+            </div>
+            <div class="picture">
+                <!--<div class="video">-->
+                <!--<video src="imglists/mp4.mp4" poster="http://okgo.top/15064780509141105.png" width="1180px" height="320px" controls></video>-->
+                <!--</div>-->
+                <div class="pic-o">
+                    <img src="imglists/adver1.jpg" alt="">
+                </div>
+                <div class="pic-o">
+                    <img src="imglists/adver2.jpg" alt="">
+                </div>
+                <div class="pic-o">
+                    <img src="imglists/adver3.jpg" alt="">
+                </div>
+            </div>
+            <div class="comment" style="display: none">
+                <ul>
+                <li class="comment-text" style="magin-bottom:3%">
+                <div class="qq">
+                    <i class="iconfont icon-yonghu"></i>
+                    <span class="wenzi">博众集成</span>
+                    <em>2017-10-09 16:05</em>
+                </div>
+                <div class="ww">
+                    <i class="iconfont icon-startgetangry-x"></i>
+                    <i class="iconfont icon-startgetangry-x"></i>
+                    <i class="iconfont icon-startgetangry-x"></i>
+                    <i class="iconfont icon-startgetangry-x"></i>
+                    <i class="iconfont icon-startgetangry-x"></i>
+                </div>
+                <div class="ee"  style="text-align: center">
+                    <span>产品确实木有那么的不咋地！</span>
+                </div>
+                </li>
+                <!--动态生成区-->
+                <%
+                comments.forEach((comment)=>{
+                %>
+                <li class="comment-text" style="display:block;magin-bottom:16px">
+                    <div class="qq">
+                        <i class="iconfont icon-yonghu"></i>
+                        <span class="wenzi"><%=comment.username%></span>
+                        <em><%=comment.commentdate%></em>
+                    </div>
+                <div class="ww">
+                    <i class="iconfont icon-startgetangry-x"></i>
+                    <i class="iconfont icon-startgetangry-x"></i>
+                    <i class="iconfont icon-startgetangry-x"></i>
+                    <i class="iconfont icon-startgetangry-x"></i>
+                    <i class="iconfont icon-startgetangry-x"></i>
+                </div>
+                <div class="ee" style="text-align: center">
+                    <span><%=comment.comment%></span>
+                </div>
+                <% if(comment.commentimg && comment.commentimg.length>0){
+                %>
+                <p><img src="<%=comment.commentimg%>" style="width:200px;height: 200px"/></p>
+                <%
+                }%>
+                </li><hr>
+                    <%
+                    });
+                    %>
+                </ul>
+            </div>
+            <%
+            //已知：总页码数，当前页码，每页多少条记录
+            let maxPageIndex = parseInt(page.maxPageIndex);
+            console.log("maxPageIndex="+maxPageIndex);
+            let currPageIndex = parseInt(page.currPageIndex);
+            currPageIndex = currPageIndex>maxPageIndex?maxPageIndex:currPageIndex;
+            //let countInPage = 10;
+
+            //上一页
+            previousePageIndex = currPageIndex==1?currPageIndex:currPageIndex-1;
+            //下一页
+            nextPageIndex = currPageIndex==maxPageIndex?currPageIndex:currPageIndex+1;
+            %>
+            <div id="pageBox" style="text-align: center;display: none;margin-bottom: 10px">
+                <%if(currPageIndex==1){
+                %>
+                第一页
+                上一页
+                <%
+                }else{%>
+                <a href="goodsdetail?goodsid=<%=goodsdetail.goodsid%>&pageindex=1">第一页</a>
+                <a href="goodsdetail?goodsid=<%=goodsdetail.goodsid%>&pageindex=<%=previousePageIndex%>">上一页</a>
+                <%
+                }%>
+                <%
+                //加上前后的省略号：
+                //明确：最多显示多少个页码号（如：7），当前页码前面多少（3），当前页码后面多少（3），其余都是省略号
+                //如：当前页码是6，那么显示结果是：   ……3 4 5 6 7 8 9……
+
+                //特殊情况：1）、总页码不够7个，2）前面不够三个，3）、后面不够三个
+                var startPageIndex = currPageIndex-3;
+                var endPageIndex = currPageIndex+3;
+                //1）前面不够三个，
+                if(currPageIndex-3<=0){
+                    startPageIndex = 1;
+                    endPageIndex = startPageIndex+6;
+                }
+                //2）、后面不够三个
+                if(currPageIndex+3>=maxPageIndex){
+                    endPageIndex = maxPageIndex;
+                    startPageIndex = endPageIndex-6;
+                }
+
+                //3）、总页码不够7个，
+                if(maxPageIndex<7){
+                    startPageIndex = 1;
+                    endPageIndex = maxPageIndex;
+                }
+
+                %>
+                <%
+                //开始的省略号
+                if(startPageIndex>1){
+                %>
+                ...
+                <%
+                }
+                %>
+
+                <%
+                //要显示的页码
+                for(let i=startPageIndex;i<=endPageIndex;i++){
+                if(i==currPageIndex){
+                %>
+                <%=i%>
+                <%
+                    continue;
+                }
+                %>
+                <a href="goodsdetail?goodsid=<%=goodsdetail.goodsid%>&pageindex=<%=i%>">&nbsp;<%=i%>&nbsp;</a>
+                <%
+                }%>
+
+                <%
+                //结束的省略号
+                //
+                if(endPageIndex<maxPageIndex){
+                %>
+                ...
+                <%
+                }
+                %>
+                <%if(currPageIndex==maxPageIndex){
+                %>
+                下一页
+                末页
+                <%
+                }else{%>
+                <a href="goodsdetail?goodsid=<%=goodsdetail.goodsid%>&pageindex=<%=nextPageIndex%>">下一页</a>
+                <a href="goodsdetail?goodsid=<%=goodsdetail.goodsid%>&pageindex=<%=maxPageIndex%>">末页</a>
+                <%
+                }%>
+                <input id="txtpageIndex" type="text" value="<%=currPageIndex%>" style="border: 1px solid #000000;width: 30px;margin: 0 5px;">页<input id="btnGo" type="button" value="go" style="    width: 33px;
+    height: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    background: orange;">
+            </div>
+        </div>
+        <!--<hr class="hr" style="display: none">-->
+        <!--发表评论区-->
+        <div >
+            <iframe src="upfile.html" style="width: 600px;display:none;height: 250px;border: none;text-align: center" >
+
+            </iframe>
+            <form method="post" action="savecomment" style="text-align: center;display:none">
+                <input type="hidden" name="goodsid" value="<%=goodsdetail.goodsid%>">
+                评论星级：<br/>
+                评论内容：<textarea name="comment" rows="5" cols="50" style="width: 60%;"></textarea><br/>
+                <input type="submit" value="提交评论" style="padding: 1%;margin: 5px auto;background: pink;color: #ffffff; cursor: pointer;border-radius: 10px">
+            </form>
+        </div>
+    </div>
+
+    </div>
+
+
+
+</div>
+
+<!--end-->
+<!--end-one-->
+<div class="end-one">
+    <ul class="end-one-ul">
+        <li class="end-one-li">
+            <b>正品保障</b>
+            <span>100%正品 提供发票</span>
+        </li>
+        <li class="end-one-li">
+            <b>消费致富</b>
+            <span>购物省钱 分享赚钱</span>
+        </li>
+        <li class="end-one-li">
+            <b>安全配送</b>
+            <span>安全快递 全程放心</span>
+        </li>
+        <li class="end-one-li">
+            <b>无忧售后</b>
+            <span>购物无忧 售后无忧</span>
+        </li>
+    </ul>
+</div>
+
+<!--end-two-->
+<div class="end-two">
+    <div class="content">
+        <div class="content-up">
+            <div class="up-zuo">
+                <ul class="zuo">
+                    <li><a href="javascript:;">首页</a></li>
+                    <li><a href="javascript:;">指南</a></li>
+                    <li><a href="javascript:;">物流</a></li>
+                    <li><a href="javascript:;">关于</a></li>
+                </ul>
+                <ul class="zuo">
+                    <li><a href="javascript:;">会员专区</a></li>
+                    <li><a href="javascript:;">免费佩戴</a></li>
+                    <li><a href="javascript:;">活动party</a></li>
+                    <li><a href="javascript:;">私人会所</a></li>
+                    <li><a href="javascript:;"> 我的积分</a></li>
+                </ul>
+                <ul class="zuo">
+                    <li><a href="javascript:;">戒指</a></li>
+                    <li><a href="javascript:;">手链</a></li>
+                    <li><a href="javascript:;">手镯</a></li>
+                </ul>
+                <ul class="zuo">
+                    <li><a href="javascript:;">手表</a></li>
+                    <li><a href="javascript:;">耳环</a></li>
+                    <li><a href="javascript:;">丝巾</a></li>
+                    <li><a href="javascript:;">太阳镜</a></li>
+                    <li><a href="javascript:;">套装</a></li>
+                </ul>
+                <ul class="zuo">
+                    <li><a href="javascript:;">售后服务</a></li>
+                    <li><a href="javascript:;">品质保证</a></li>
+                    <li><a href="javascript:;">退换货流程</a></li>
+                    <li><a href="javascript:;">退换货政策</a></li>
+                </ul>
+            </div>
+            <div class="up-you">
+                <div class="yous"><img src="img/logo.png" alt=""></div>
+                <div class="youx">
+                    <div class="x1"><img src="img/footer4.png" alt=""><span>微信公众号</span></div>
+                    <div class="x1"><img src="img/footer5.png" alt=""><span>扫码下载APP享优惠</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="content-down">
+            <span>广东省深圳市福田区车公庙苍松大厦北座1907-1908 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HOT：400-099-828 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;电话：0755-82503456/82504189/82504004 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 邮箱：frndo@126.com</span>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="ending">
+        <span class="footer1"> 深圳市菲尔南多时尚服饰有限公司 粤ICP备17057239号 </span>
+        <span class="footer2">技术支持：<a href="javascript:;">大腕互联</a></span>
+    </div>
+</footer>
+
+<!--backtop-->
+<div class="backtop"></div>
+<!--share-->
+<div class="share"></div>
+
+
+<script src="dist/js/goods.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload =  function () {
+        document.getElementById("btnGo").onclick = function () {
+            let pageindex = parseInt(document.getElementById("txtpageIndex").value);
+            if(pageindex<1){
+                pageindex=1;
+            }else if(pageindex><%=maxPageIndex%>){
+                pageindex = <%=maxPageIndex%>;
+            }
+            location.href="goodsdetail?goodsid=<%=goodsdetail.goodsid%>&pageindex="+pageindex;
+        }
+    }
+
+</script>
